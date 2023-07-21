@@ -25,7 +25,7 @@
     width: 100%;
     color: white;
     background-color: black;
-    border: 1px solid;
+    border: 1px solid black;
     padding: 10px 0;
     cursor: pointer;
 }

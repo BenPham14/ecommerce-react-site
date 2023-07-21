@@ -70,19 +70,19 @@
     text-align: center;
 }
 
-.submit input:first-child {
+.submit input {
     border-radius: 5px;
     border: 1px solid black;
 }
 
-.submit input:last-child {
+.submit button {
     background-color: black;
     color: white;
     border: none;
     cursor: pointer;
 }
 
-.submit input:last-child:active {
+.submit button:active {
     background-color: white;
     border: 1px solid black;
     color: black;
