@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, Routes, Route, HashRouter } from "react-router-dom";
 import './App.css';
 import Home from "./pages/home";
 import React from 'react';
@@ -16,7 +16,7 @@ function App() {
 
   return (
     <AppContextProvider>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path='/' element={<Home />} />
           <Route path='/new' element={<New />} />
@@ -28,7 +28,7 @@ function App() {
           <Route path='/details/:id' element={<Details />} />
           <Route path='/confirmation' element={<Confirmation />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </AppContextProvider>
   );
 }
