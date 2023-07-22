@@ -15,17 +15,18 @@ const Sizing = ({products, selectedSize, setSelectedSize}) => {
         (products.category === "men's clothing" || products.category === "women's clothing") &&
             <div>
                 {sizes.map((size) => 
-                    <input 
+                    <button
                         key={size} 
                         style={{
                             backgroundColor: selectedSize === size && 'black', 
                             color: selectedSize === size && 'white'
-                        }} 
-                        type='button' 
+                        }}
                         value={size} 
                         id={DetailsCSS.button} 
                         onClick={(event) => setSelectedSize(event.target.value)}
-                    />
+                    >
+                        {size}
+                    </button>
                 )}
             </div>
     );
